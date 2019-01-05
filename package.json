@@ -1,0 +1,48 @@
+{
+  "name": "mfd",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@types/jest": "^23.3.11",
+    "@types/node": "^10.12.18",
+    "@types/react": "^16.7.18",
+    "@types/react-dom": "^16.0.11",
+    "@types/react-helmet": "^5.0.8",
+    "@types/styled-components": "^4.1.4",
+    "polished": "^2.3.1",
+    "react": "^16.7.0-alpha.2",
+    "react-dom": "^16.7.0-alpha.2",
+    "react-helmet": "^5.2.0",
+    "react-scripts": "2.1.2",
+    "styled-components": "^4.1.3",
+    "styled-normalize": "^8.0.4",
+    "typescript": "^3.2.2"
+  },
+  "devDependencies": {
+    "prettier": "^1.15.3",
+    "react-docgen-typescript": "^1.12.2",
+    "react-styleguidist": "^8.0.6",
+    "tslint": "^5.12.0",
+    "tslint-config-prettier": "^1.17.0"
+  },
+  "scripts": {
+    "styleguide": "styleguidist server",
+    "styleguide:build": "styleguidist build",
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject",
+    "pretty": "prettier --write \"src/**/*.{ts,tsx}\" && tslint --project . --fix",
+    "lint": "tslint --project .",
+    "type-lint": "tsc --noEmit"
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "browserslist": [
+    ">0.2%",
+    "not dead",
+    "not ie <= 11",
+    "not op_mini all"
+  ]
+}
