@@ -38,11 +38,11 @@ export const ScPanel = React.memo<ScPanelProps>(({ onButtonClick }) => {
   return (
     <Container>
       <ButtonRow>
-        <Button onClick={onButtonClick(StarCitizenKey.COMMS)}>Comms</Button>
-        <Button onClick={onButtonClick(StarCitizenKey.MOBI_GLAS)}>
+        <Button onClick={onButtonClick(StarCitizenKey.COMMLINK)}>Comms</Button>
+        <Button onClick={onButtonClick(StarCitizenKey.MOBIGLAS)}>
           mobiGlas
         </Button>
-        <Button onClick={onButtonClick(StarCitizenKey.STAR_MAP)}>
+        <Button onClick={onButtonClick(StarCitizenKey.STARMAP)}>
           Star Map
         </Button>
       </ButtonRow>
@@ -89,16 +89,16 @@ export const ScPanel = React.memo<ScPanelProps>(({ onButtonClick }) => {
       </ButtonRow>
 
       <ToggleRow>
-        <Button onClick={onButtonClick(StarCitizenKey.LOCK)}>Flight Ready</Button>
-        <Button onClick={onButtonClick(StarCitizenKey.UNLOCK)}>Landing Gear</Button>
-        <Button onClick={onButtonClick(StarCitizenKey.SCANNING)}>
+        <Button onClick={onButtonClick(StarCitizenKey.FLIGHT_READY)}>Flight Ready</Button>
+        <Button onClick={onButtonClick(StarCitizenKey.LANDING_GEAR)}>Landing Gear</Button>
+        <Button onClick={onButtonClick(StarCitizenKey.CYCLE_CAMERA)}>
           Cycle Camera
         </Button>
-        <Button onClick={onButtonClick(StarCitizenKey.LIGHTS)}>Auto Land</Button>
+        <Button onClick={onButtonClick(StarCitizenKey.AUTOLAND)}>Auto Land</Button>
         <Button onClick={onButtonClick(StarCitizenKey.OPEN_DOORS)}>
           Look Behind
         </Button>
-        <Button onClick={onButtonClick(StarCitizenKey.CLOSE_DOORS)}>
+        <Button onClick={onButtonClick(StarCitizenKey.EXIT_SEAT)}>
           Exit Seat
         </Button>
       </ToggleRow>

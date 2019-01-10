@@ -104,7 +104,7 @@ export const App = React.memo(() => {
             <ConnectionContainer>
               <ConnectionStatus />
             </ConnectionContainer>
-            <ScPanel onButtonClick={(item) => () => socket.emit('move-mouse')} />
+            <ScPanel onButtonClick={(item) => () => socket.emit('run_action', {name: item})} />
           </>
         )}
       </SocketProvider>
