@@ -1,7 +1,7 @@
 const path = require('path');
 
 module.exports = {
-  components: 'src/app/design/**/*.tsx',
+  components: 'src/app/components/**/*.tsx',
   propsParser: require('react-docgen-typescript').parse,
   webpackConfig: require('react-scripts/config/webpack.config.js'),
   styleguideComponents: {

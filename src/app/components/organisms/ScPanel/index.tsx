@@ -4,7 +4,7 @@ import { StarCitizenKey } from '../../../api/keymap';
 import { Button } from '../../atoms/Button';
 
 const Container = styled.div`
-  height: calc(100vh - 32px);
+  height: calc(100vh - 32px - 100px);
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
@@ -105,7 +105,6 @@ export const ScPanel = React.memo<ScPanelProps>(({ onButtonClick }) => {
 
       <ButtonRow>
         <Button
-          disabled={true}
           onClick={onButtonClick(StarCitizenKey.SELF_DESTRUCT)}
         >
           Self Destruct
